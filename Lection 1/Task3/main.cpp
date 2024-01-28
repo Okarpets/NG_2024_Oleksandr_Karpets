@@ -11,7 +11,7 @@ int main()
     cin >> hight;
     cout << "Your Christmas tree:" << endl;
     cout << space << endl;
-    for (int colum = 0; colum < hight; ++colum) {
+    for (int colum = 0; colum < hight - 1; ++colum) {
         for (int row = 0; row < (hight - colum); ++row) {
             cout << space;
         }
