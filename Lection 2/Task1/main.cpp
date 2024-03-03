@@ -11,18 +11,19 @@ int main()
     cout << "Enter array length:" << endl;
     cin >> length;
     int *arr = new int[length];
-    for (int i = 0; i < length; i++) {
+    for (int index = 0; index < length; index++) {
         cout << "Enter array element:" << endl;
-        cin >> arr[i];
+        cin >> arr[index];
     }
-    for (int i = 0; i < length; i++) {
-        sum = sum + arr[i];
-        if (arr[i]%2 == 0) even = even + arr[i];
-        else odd = odd + arr[i];
+    for (int index = 0; index < length; index++) {
+        sum = sum + arr[index];
+        if (arr[index]%2 == 0) even = even + arr[index];
+        else odd = odd + arr[index];
     }
     cout << "Sum of all numbers in array: " << sum << endl;
     cout << "Sum of all even numbers in array: " << even << endl;
     cout << "Sum of all odd numbers in array: " << odd << endl;
+    delete[] arr;
     return 0;
 }
 

@@ -30,5 +30,6 @@ int main()
     }
     cout << "Min element: " << minm << endl;
     cout << "Max element: " << maxm << endl;
+    delete[] arr;
     return 0;
 }
